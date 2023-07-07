@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		h4{
+			text-indent: 20px;
+			text-align: justify;
+			text-transform: capitalize ;
+			white-space: pre-wrap;
+		}
+		h3{
+			animation-name: changeColour;
+			animation-duration: 1s;
+		}
+	@keyframes changeColour{
+		0% {background-color: blue;}
+		10% {background-color: green;}
+		20% {background-color: yellow;}
+		30% {background-color: orange;}
+		40% {background-color: darkred;}
+		50% {background-color: blue;}
+		60% {background-color: green;}
+		70% {background-color: yellow;}
+		80% {background-color: orange;}
+		90% {background-color: darkred;}
+		100% {background-color: blue;}
+		
+	}
+	.tooltip{
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+	.tooltip .tooltiptext{
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: white;
+		text-align: center;
+		border-radius: 6px;
+/*		padding: 5px 0;*/
+		position: absolute;
+		z-index: 1;
+	}
+	.tooltip:hover .tooltiptext{
+		visibility: visible;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<body>
+	<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+
+	<h3>hello world</h3>
+
+	<div class="tooltip">Hover to see tooltip<span class="tooltiptext">hello world</span></div>
+
+</body>
+</html>
